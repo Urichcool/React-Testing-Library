@@ -33,8 +33,11 @@ describe("TEST APP", () => {
 
   test("INPUT EVENT", () => {
     render(<App />);
-     const input = screen.getByPlaceholderText(/input value/i);
-
-    
+    const input = screen.getByPlaceholderText(/input value/i);
+    expect(screen.queryByTestId("value-elem")).toContainHTML("");
+    fireEvent.input(input, {
+      target: {value: '123123'}
+    })
+    expect(screen.queryByTestId('value-elem')).toContainHTML('123123')
   });
 });
