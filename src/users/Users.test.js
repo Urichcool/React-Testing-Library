@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import Users from "./Users";
+import Users from "./users";
 import axios from "axios";
 
 jest.mock("axios");
