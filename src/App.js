@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
 
+
 function App() {
   const [data, setData] = useState(null);
   const [toggle, setToggle] = useState(false);
@@ -26,6 +27,7 @@ function App() {
         click me
       </button>
       <input onChange={e => setValue(e.target.value)} type="text" placeholder="input value" />
+
     </div>
   );
 }
