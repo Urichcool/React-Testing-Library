@@ -36,7 +36,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import AppRouter from "./Routes/AppRouter";
-import NavBar from "./NavBar/NavBar";
+import NavBar from "./components/NavBar/NavBar";
 
 const App = () => {
   return (
