@@ -13,6 +13,9 @@ import React from 'react';
         <Link to="/users" data-testid="users-link">
           users
         </Link>
+        <Link to="/hello">
+          hello
+        </Link>
       </div>
     );
  }

@@ -21,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "wdio": "wdio run ./wdio.conf.js",
+    "test:e2e": "npx wdio run ./wdio.conf.js"
   },
   "eslintConfig": {
     "extends": [
@@ -46,7 +48,13 @@
     "@babel/preset-env": "^7.22.9",
     "@testing-library/dom": "^9.3.1",
     "@testing-library/user-event": "^14.4.3",
-    "jest": "^27.5.1"
+    "@wdio/cli": "^8.13.5",
+    "@wdio/local-runner": "^8.13.4",
+    "@wdio/mocha-framework": "^8.12.1",
+    "@wdio/spec-reporter": "^8.12.2",
+    "chromedriver": "^114.0.3",
+    "jest": "^27.5.1",
+    "wdio-chromedriver-service": "^8.1.1"
   },
   "jest": {
     "moduleNameMapper": {
